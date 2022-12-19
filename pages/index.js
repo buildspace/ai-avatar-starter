@@ -78,6 +78,8 @@ const Home = () => {
         console.log(
           `Model still loading after ${maxRetries} retries. Try request again in 5 minutes.`
         );
+        setRetryCount(maxRetries);
+        setIsGenerating(false);
         return;
       }
 

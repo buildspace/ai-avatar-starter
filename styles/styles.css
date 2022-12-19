@@ -21,15 +21,12 @@ body {
 
 .container {
     display: flex;
-    place-content: center flex-start;
-    align-items: center;
     flex: 0 0 auto;
-    flex-flow: column nowrap;
+    flex-flow: row nowrap;
     gap: 10px;
-    height: fit-content;
-    max-width: 975px;
+    /* height: fit-content; */
+    height: 100%;
     overflow: auto;
-    padding: 50px;
     position: relative;
     width: auto;
     gap: 64px;
@@ -40,6 +37,7 @@ body {
     flex-direction: column;
     width: 100%;
     align-items: center;
+    justify-content: center;
     color: #FFF
 }
 
@@ -112,7 +110,7 @@ body {
     text-transform: none;
 }
 
-input {
+.prompt-box input {
     font-family: 'Manrope', sans-serif;
 }
 
@@ -135,37 +133,6 @@ input {
     padding: 0px;
     position: relative;
     width: 100%;
-}
-
-.key-stroke {
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    transform: none;
-}
-
-.key-stroke p {
-    color: rgba(255, 255, 255, 0.75);
-    flex: 0 0 auto;
-    height: auto;
-    position: relative;
-    white-space: pre;
-    width: auto;
-}
-
-.or {
-    outline: none;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    flex-shrink: 0;
-    transform: none;
-}
-
-.or p {
-    color: rgba(255, 255, 255, 0.25)
 }
 
 .generate-button {
@@ -269,8 +236,9 @@ input {
 
 .output-content {
     width: 512px;
-    height: 512px;
+    height: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     flex-shrink: 0;
     transform: none;
@@ -287,10 +255,13 @@ input {
     color: white;
 }
 
-@media (min-width: 810px) and (max-width: 1199px) {
+@media (max-width: 1200px) {
     .container {
-        max-width: 600px;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 700px;
         width: 100%;
+        padding: 50px;
     }
 
     .prompt-container {
@@ -298,30 +269,16 @@ input {
         width: 100%;
     }
 
-    .prompt-box {
+    .output-content {
         width: 100%;
+        height: 512px;
+        align-items: center;
     }
 }
 
-@media (max-width: 809px) {
+@media (max-width: 809px) and (max-width: 600px) {
     .container {
-        max-width: 500px;
-        width: 100%;
-    }
-
-    .prompt-container {
-        max-width: 500px;
-        width: 100%;
-    }
-
-    .prompt-box {
-        width: 100%;
-    }
-}
-
-@media (max-width: 600px) {
-    .container {
-        max-width: 400px;
+        max-width: 550px;
         width: 100%;
     }
 
@@ -331,11 +288,6 @@ input {
 
     .header-subtitle h2 {
         text-align: center;
-    }
-
-    .key-stroke,
-    .or {
-        display: none;
     }
 
     .prompt-buttons {
