@@ -44,7 +44,7 @@ const generateAction = async () => {
   }
 
   // // Replace "raza" or "Raza" in input with "abraza"
-  // const input = finalPrompt.replace(/raza/gi, 'abraza');
+  const input = finalPrompt.replace(/matt/gi, 'matthewweichel');
 
   const response = await fetch('/api/generate', {
     method: 'POST',
@@ -110,16 +110,16 @@ const sleep = (ms) => {
   return (
     <div className="root">
       <Head>
-        <title>Silly picture generator | buildspace</title>
+        <title>Matt's AI Avatar Generator</title>
       </Head>
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Silly picture generator</h1>
+            <h1>Matt's AI Avatar Generator</h1>
           </div>
           <div className="header-subtitle">
             <h2>
-              Turn me into anyone you want! Make sure you refer to me as "matthewweichel" in the prompt
+              Turn me into anyone you want! Make sure you refer to me as "matt" in the prompt
             </h2>
           </div>
           {/* Add prompt container here */}
@@ -160,8 +160,7 @@ const sleep = (ms) => {
           rel="noreferrer"
         >
           <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
+            <a href="https://www.buymeacoffee.com/beccaandmatt" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style={{height: "60px, !important", width: "217px !important"}} /></a>
           </div>
         </a>
       </div>

@@ -7,7 +7,6 @@ const generateAction = async (req, res) => {
         const base64 = buffer.toString('base64');
         return `data:image/png;base64,${base64}`;
     };
-    const finalInput = input.replace("matt", 'matthewweichel');
     // Add fetch request to Hugging Face
     const response = await fetch(
       `https://api-inference.huggingface.co/models/turtles/matthewweichel`,
@@ -18,7 +17,7 @@ const generateAction = async (req, res) => {
         },
         method: 'POST',
         body: JSON.stringify({
-          inputs: finalInput,
+          inputs: input,
         }),
       }
     );
