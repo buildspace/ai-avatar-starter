@@ -10,7 +10,7 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background: linear-gradient(90deg, #000000, #ff068b);
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
@@ -62,6 +62,11 @@ body {
     font-weight: 400;
     line-height: 1.4em;
     color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+}
+
+.header-subtitle h2 span{
+    font-weight: 700;
 }
 
 .prompt-container {
@@ -152,6 +157,11 @@ body {
     width: min-content;
     will-change: transform;
     cursor: pointer;
+    
+}
+
+.generate-button:hover {
+    animation: pulse 1s infinite;
 }
 
 .generate {
@@ -253,6 +263,55 @@ body {
     font-weight: bold;
     white-space: pre-line;
     color: white;
+}
+
+.input-button-ctnr {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.input-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    background: linear-gradient(90deg, #5f307a, #22bc14);
+    border-radius: 30px;
+    border: none;
+}
+
+.input-button:hover {
+    background: black;
+    color: #2bff00;
+    border: 1px solid #2bff00;
+    /* animate to pulse rapidly */
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(21, 255, 0, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(31, 223, 10, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(92, 226, 8, 0);
+    }
+}
+
+.input-button:active {
+    background: linear-gradient(90deg, #F32E98, #F32E98);
+    border: #2bff00;
 }
 
 @media (max-width: 1200px) {
