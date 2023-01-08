@@ -9,11 +9,35 @@ const Home = () => {
   const [hardInput2, setHardInput2] = useState('');
   const [hardInput3, setHardInput3] = useState('');
   const [hardInput4, setHardInput4] = useState('');
+
+  //type of art
+  const [option1, setOption1] = useState('');
+  //subject type
+  const [option2, setOption2] = useState('');
+  //artist
+  const [option3, setOption3] = useState('');
+  //descriptive adjs. separated by commas
+  const [option4, setOption4] = useState('');
+  
+
   const [input, setInput] = useState('');
   const [img, setImg] = useState('');
   const onChange = (event) => {
     setInput(event.target.value);
   };
+
+  const onOptionChange = (event) => {
+    if (event.target.id === 'option1') {
+      setOption1(event.target.value);
+    } else if (event.target.id === 'option2') {
+      setOption2(event.target.value);
+    } else if (event.target.id === 'option3') {
+      setOption3(event.target.value);
+    } else if (event.target.id === 'option4') {
+      setOption4(event.target.value);
+    }
+  };
+  
   const maxRetries = 20;
   // Numbers of retries
   const [retry, setRetry] = useState(0);
@@ -25,6 +49,53 @@ const Home = () => {
 
   // New stateful variable to store image count
   const [imageCount, setImageCount] = useState(0);
+
+
+
+  const renderCustomPrompt = () => {
+    return (
+      <div className="input-ctnr">
+        <p>
+          <input
+            className="input"
+            type="text"
+            id="option1"
+            placeholder='digital painting, oil painting, watercolor, etc.'
+            value={option1}
+            onChange={onOptionChange}
+          />
+          of matt as a 
+          <input
+            className="input"
+            type="text"
+            id="option2"
+            placeholder='superhero, villain, cowboy, etc.'
+            value={option2}
+            onChange={onOptionChange}
+          />
+          , art by 
+         
+          <input
+            className="input"
+            type="text"
+            id="option3"
+            placeholder='Mike Winkelmann, Daito Manabe, Leonardo Da Vinci, etc.'
+            value={option3}
+            onChange={onOptionChange}
+          />, 
+          <input
+            className="input"
+            type="text"
+            id="option4"
+            placeholder='dramatic, colorful, etc.'
+            value={option4}
+            onChange={onOptionChange}
+          />
+          , highly detailed, uhd, 8k, artstation
+        </p>
+      </div>
+    );
+  };
 
 //render button container for hardInputs
   const renderHardInputButtons = () => {
@@ -52,7 +123,7 @@ const Home = () => {
             setInput(hardInput3);
           }}
         >
-          Super Hero
+          Cowboy
         </button>
         <button
           className="input-button"
@@ -65,6 +136,7 @@ const Home = () => {
       </div>
     );
   };
+  
 
   // Add generateAction
 const generateAction = async () => {
@@ -88,7 +160,8 @@ const generateAction = async () => {
     setRetry(0);
   }
 
-  
+  const input = `${option1} of mattweicheljr as a ${option2}, art by ${option3}, ${option4}, highly detailed, uhd, 8k, artstation`;
+  console.log('input', input)
   const response = await fetch('/api/generate', {
     method: 'POST',
     headers: {
@@ -153,11 +226,11 @@ const sleep = (ms) => {
   //hard input useEffect, hard code pre scripted prompts for user to generate an image
   useEffect(() => {
     //rembrandt
-    setHardInput1('matthewweichel portrait in the style of Rembrandt, paying attention to lighting and shadow to create a sense of depth and dimension, intricate, elegant, hgihly detailed, digital painting, smooth, sharp focus, concept art, highly detailed, uhd, 8k, artstation');
+    setHardInput1('mattweicheljr portrait in the style of Rembrandt, paying attention to lighting and shadow to create a sense of depth and dimension, intricate, elegant, hgihly detailed, digital painting, smooth, sharp focus, concept art, highly detailed, uhd, 8k, artstation');
     //marvel/pixar super hero
-    setHardInput2('matthewweichel as Marvel super hero in the style of Pixar animation, 3d render, futuristic art, highly detailed, uhd, 8k, artstation');
-    setHardInput3('highly detailed digital portrait of matthewweichel as a marvel super hero, photo realism, uhd, vibrant colors, artstation, 8k');
-    setHardInput4('highly detailed digital portrait of matthewweichel as a marvel super villian, evil grin, photo realism, uhd, dark colors, shadow depth, artstation, 8k');
+    setHardInput2('mattweicheljr as Marvel super hero in the style of Pixar animation, 3d render, futuristic art, highly detailed, uhd, 8k, artstation');
+    setHardInput3('mattweicheljr portrait as a yellowstone cowboy, art by Mike Winkelmann, intricate, elegant, hgihly detailed, digital painting, smooth, sharp focus, concept art, highly detailed, uhd, 8k, artstation');
+    setHardInput4('highly detailed digital portrait of mattweicheljr as a marvel super villian, evil grin, photo realism, uhd, dark colors, shadow depth, artstation, 8k');
   }, []);
 
   return (
@@ -174,12 +247,15 @@ const sleep = (ms) => {
             <h2>
               Generate a unique avatar of me using AI. <br />
               Refer to me as 
-                <span>"matthewweichel"</span> 
+                <span>"mattweicheljr"</span> 
               in your prompt.
+
+
             </h2>
           </div>
 
             {renderHardInputButtons()}
+            {renderCustomPrompt()}
 
           {/* Add prompt container here */}
           <div className="prompt-container">
