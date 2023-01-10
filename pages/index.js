@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
-import buildspaceLogo from '../assets/buildspace-logo.png';
 
 const Home = () => {
   // Max number of times we will retry for model loading (took my up to 5 mins)
@@ -105,12 +104,11 @@ const Home = () => {
       <div className="container">
         <div className="header">
           <div className="header-title">
-            <h1>Guitar legend generator</h1>
+            <h1>Nawed AI Avatar Generator</h1>
           </div>
           <div className="header-subtitle">
             <h2>
-              Put my guitar anywhere! Make sure to use "ajd guitar" in your
-              prompt :).
+              Enter a prompt and generate an AI avatar based on your prompt
             </h2>
           </div>
           <div className="prompt-container">
@@ -139,18 +137,6 @@ const Home = () => {
             <p>{finalPrompt}</p>
           </div>
         )}
-      </div>
-      <div className="badge-container grow">
-        <a
-          href="https://buildspace.so/builds/ai-avatar"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <div className="badge">
-            <Image src={buildspaceLogo} alt="buildspace logo" />
-            <p>build with buildspace</p>
-          </div>
-        </a>
       </div>
     </div>
   );

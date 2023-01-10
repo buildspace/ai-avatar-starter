@@ -5,8 +5,9 @@ const bufferToBase64 = (buffer) => {
 
 const generateAction = async (req, res) => {
   const input = JSON.parse(req.body).input;
+  console.log(input);
   const response = await fetch(
-    `https://api-inference.huggingface.co/models/adilanchian/dreambooth-ajd-guitar-v1`,
+    `https://api-inference.huggingface.co/models/nawed/nawed-new`,
     {
       headers: {
         Authorization: `Bearer ${process.env.HF_AUTH_KEY}`,
@@ -20,9 +21,10 @@ const generateAction = async (req, res) => {
   );
 
   if (response.ok) {
-    const buffer = await response.buffer();
-    const base64 = bufferToBase64(buffer);
-    res.status(200).json({ image: base64 });
+    const buffer = await response.arrayBuffer();
+    res.status(200).json({
+      image: bufferToBase64(Buffer.from(buffer)),
+    });
   } else if (response.status === 503) {
     const json = await response.json();
     res.status(503).json(json);
