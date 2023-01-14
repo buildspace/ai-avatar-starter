@@ -2,9 +2,10 @@ const bufferToBase64 = (buffer) => {
   let arr = new Uint8Array(buffer);
   const base64 = btoa(
     arr.reduce((data, byte) => data + String.fromCharCode(byte), "")
-  )
-  return `data:image/png;base64,${base63}`;
-}
+  );
+  // const base64 = buffer.toString("base64");
+  return `data:image/png;base64,${base64}`;
+};
 
 const generateAction = async (req, res) => {
   console.log("Received request");
@@ -16,7 +17,7 @@ const generateAction = async (req, res) => {
     {
       headers: {
         Authorization:`Bearer ${process.env.HF_AUTH_KEY}`,
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
       },
       method: "POST",
       body: JSON.stringify({
@@ -24,7 +25,6 @@ const generateAction = async (req, res) => {
       }),
     }
   );
-  
   
   if (response.ok) { //Check for different statuses to send proper payload
     const buffer = await response.arrayBuffer();
