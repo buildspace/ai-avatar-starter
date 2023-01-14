@@ -329,3 +329,22 @@ body {
         transform: rotate(360deg);
     }
 }
+
+/* styling the attribution */
+.attribution {
+    font-size: 1.5rem;
+    color: rgb(0, 98, 255);
+    top: 50%;
+    margin-bottom: 1.2rem;
+}
+
+.attribution a {
+    color:  #f159aa;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out;
+    text-decoration: none;
+}
+
+.attribution a:hover {
+    color: cyan;
+}
