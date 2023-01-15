@@ -4,10 +4,7 @@ This project is built with Stable Diffusion for ML image diffusion, Dreambooth f
 
 <div align="center">
 
-  ![Image](./images/desk-view.png)
-
-
-  <img src="./images/Mobile-view.png" alt="mobile-view" width="250" />
+  ![Image](./assets/desktop-img.png)
   
 </div>
 
