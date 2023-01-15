@@ -165,15 +165,15 @@ const Home = () => {
             <p>build with buildspace</p>
           </div>
         </a>
-      </div>
-        <footer className="attribution">
+      </div> 
+      <footer className="attribution">
           Coded by 
           <a 
             href="https://github.com/Timiphil" 
             target="_blank"
             > Timiphil 
-          </a>.
-        </footer>
+          </a>
+        </footer>     
     </div>
   );
 };

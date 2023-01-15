@@ -182,7 +182,7 @@ body {
     left: 20px;
     position: fixed;
     width: auto;
-    z-index: 1;
+    z-index: 1;  
 }
 
 .badge-container a {
@@ -308,15 +308,6 @@ body {
     }
 }
 
-/* @media (max-width: 500px) and (max-width: 350){
-    .badge-container {
-        position: absolute;
-    }
-       
-} */
-
-
-
 /* Loading ring animation */
 .loader {
     width: 18px;
@@ -341,14 +332,15 @@ body {
 
 /* styling the attribution */
 .attribution {
-    font-size: 1.5rem;
-    color: rgb(0, 98, 255);
-    top: 50%;
-    margin-bottom: 1.2rem;
+    font-size: 1.2rem;
+    color: #9127ee;
+    bottom: 2.5%;
+    position: fixed;
+    left: 61%;
 }
 
 .attribution a {
-    color:  #9127ee;
+    color: #fff;
     cursor: pointer;
     transition: color 0.4s ease-in-out;
     text-decoration: none;
