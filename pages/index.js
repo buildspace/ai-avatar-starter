@@ -8,7 +8,8 @@ const Home = () => {
   
   const maxRetries = 20; // Don't retry more than 20 times
   
-  const [input, setInput] = useState('Portrait of Yuliia as landscape, beautiful muscular, comedy, elegant, highly detailed, digital painting, artstation, dynamic lighting, concept art, smooth, sharp focus, illustration, art by Leonardo da Vinci'); // creating input state property
+  const [input, setInput] = useState(''); // creating input state property
+  
   const [img, setImg] = useState(''); // creating new state property for img
   const [retry, setRetry] = useState(0); // Numbers of retries
   const [retryError, setRetryError] = useState(0);
@@ -117,7 +118,9 @@ const Home = () => {
             <p> Make me into whoever you want! Make sure you refer to me as "timiphil" using the prompt</p>
           </div>
           <div className="prompt-container">
+          
             <input className="prompt-box" value={input} onChange={onChange} />
+         
 
             <div className="prompt-buttons">
               <a 
