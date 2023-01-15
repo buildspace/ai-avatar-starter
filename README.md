@@ -23,7 +23,7 @@ This project welcome me to the world of AI generated art through a sick open sou
 
 ## How To Use It
 
-Type any prompt in the input of any character of whoever you want to be and the timiphil will generate it for you. You can also use it to generate logo for your website. There is no limitations, you can do anything that you imagine. Example of prompts are:
+Type any prompt in the input of any character of whoever you want to be and the timiphil will generate it for you. You can also use it to generate logo for your website. There is no limitations, you can do anything that you imagine. Examples of prompt are:
 
 > “Portrait of timiphil(person) as avatar(character), muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by Michael Armitage(artist 1) and Andre Hemer (artist 2) and Julia Watchel(artist 3)”.
 
