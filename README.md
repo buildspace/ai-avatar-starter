@@ -17,27 +17,48 @@ This project welcome me to the world of AI generated art through a sick open sou
 
 2. I trained __Stable Diffusion__ using a technique called Brimbles to teach Stable Diffusion what I look like using identifiers.
 
-3. Building a web application using Next.js for user experience that is deploy through Railway.
+3. Building a web application that generate images using Next.js that is deploy through Railway.
 
 ***
 
 ## How To Use It
 
-Type any prompt in the input of any character of whoever you want and the timiphil will generate it for you. You can also use this to generate logo for your website. Example of prompts are:
+Type any prompt in the input of any character of whoever you want to be and the timiphil will generate it for you. You can also use it to generate logo for your website. There is no limitations, you can do anything that you imagine. Example of prompts are:
 
-> “Portrait of timiphil(person) as avatar(character), muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by Michael Armitage(artist 1) and Andre Hemer (artist 2) and Julia Watchel(artist 3)”
+> “Portrait of timiphil(person) as avatar(character), muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by Michael Armitage(artist 1) and Andre Hemer (artist 2) and Julia Watchel(artist 3)”.
 
-## Learn More
+
+> Portrait of Yuliia as landscape, beautiful muscular, comedy, elegant, highly detailed, digital painting, artstation, dynamic lighting, concept art, smooth, sharp focus, illustration, art by Leonardo da Vinci.
+
+***
+
+## Links
+
+[Link to Portfolio Website](https://timiphil.github.io/MyPortfolio/)
+
+[Link to Timiphil Avatar Generator](https://ai-avatar-starter-production-2265.up.railway.app/)
+
+***
+
+
+## Learning More
+
+I intend to learn more on prompt engineering, how AI works 
 
 To learn more about Next.js, take a look at the following resources:
 
 - [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+***
+## Labels
+![GitHub all releases](https://img.shields.io/github/downloads/{Timiphil}/{ai-avatar-generator}/total)
+![GitHub language count](https://img.shields.io/github/languages/count/{Timiphil}/{ai-avatar-generator})
+![GitHub top language](https://img.shields.io/github/languages/top/{Timiphil}/{ai-avatar-generator}?color=yellow)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/{Timiphil}/{ai-avatar-generator})
+![GitHub forks](https://img.shields.io/github/forks/{Timiphil}/{ai-avatar-generator}?style=social)
+![GitHub Repo stars](https://img.shields.io/github/stars/{Timiphil}/{ai-avatar-generator}?style=social)
+
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
