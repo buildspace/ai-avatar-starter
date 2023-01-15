@@ -1,6 +1,6 @@
 ## Timiphil Avatar Generator
 
-This project is built with Stable Diffusion for ML image diffusion, Dreambooth for training implementation, Hugging Face for hosting pre-trained models, Google Colab for evaluating the model and importing an image dataset, Jupyter notebooks for code execution and visualization of the output, and Next.js a React framework that is the building blocks to create web application.
+This is an AI Avarter generator. It's an incredible web app that is built with Stable Diffusion for ML image diffusion, Dreambooth for training implementation, Hugging Face for hosting pre-trained models, Google Colab for evaluating the model and importing an image dataset, Jupyter notebooks for code execution and visualization of the output, and Next.js a React framework which is the building blocks to create web application.
 
 <div align="center">
 
@@ -10,8 +10,13 @@ This project is built with Stable Diffusion for ML image diffusion, Dreambooth f
 
 # About this Project
 
-This project welcome me to the world of AI generated art through a sick open source software called _“Stable Diffusion”_ like __Dall-e__ or __MidJourney__. __Stable Diffusion__ is game changer - it's techniques helps to fine-tune and combine them with other tech to create extremely accurate depictions of any character on the internet.
+This project welcome me to the world of AI generated art through a sick open source software called _“Stable Diffusion”_ like __Dall-e__ or __MidJourney__. __Stable Diffusion__ is game changer - it's techniques helps to fine-tune and combine them with other tech to create extremely accurate depictions of any character on the internet. 
 
+1.  Learning on how prompt works where the AI go through process training data, deep learning, latent space, generation, and to output. Using prompt from text to actual image.
+
+***
+
+2. I trained __Stable Diffusion__ using a technique called
  
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
