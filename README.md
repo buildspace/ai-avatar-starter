@@ -1,4 +1,4 @@
-## Timiphil Avatar Generator
+# Timiphil Avatar Generator
 
 This is an AI Avarter generator. It's an incredible web app that is built with Stable Diffusion for ML image diffusion, Dreambooth for training implementation, Hugging Face for hosting pre-trained models, Google Colab for evaluating the model and importing an image dataset, Jupyter notebooks for code execution and visualization of the output, and Next.js a React framework which is the building blocks to create web application.
 
@@ -8,7 +8,7 @@ This is an AI Avarter generator. It's an incredible web app that is built with S
   
 </div>
 
-# About this Project
+## About this Project
 
 This project welcome me to the world of AI generated art through a sick open source software called _“Stable Diffusion”_ like __Dall-e__ or __MidJourney__. __Stable Diffusion__ is game changer - it's techniques helps to fine-tune and combine them with other tech to create extremely accurate depictions of any character on the internet. 
 ***
