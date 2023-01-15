@@ -9,7 +9,7 @@ const Home = () => {
   const maxRetries = 20; // Don't retry more than 20 times
   
   const [input, setInput] = useState(''); // creating input state property
-  
+  const [placeholder, setPlaceholder] = useState("cats juggling in an alley")
   const [img, setImg] = useState(''); // creating new state property for img
   const [retry, setRetry] = useState(0); // Numbers of retries
   const [retryError, setRetryError] = useState(0);
@@ -119,7 +119,12 @@ const Home = () => {
           </div>
           <div className="prompt-container">
           
-            <input className="prompt-box" value={input} onChange={onChange} />
+            <input 
+              className="prompt-box" 
+              value={input} 
+              onChange={onChange} 
+              placeholder={placeholder}
+            />
          
 
             <div className="prompt-buttons">
