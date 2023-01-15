@@ -2,15 +2,16 @@
 
 This project is built with Stable Diffusion for ML image diffusion, Dreambooth for training implementation, Hugging Face for hosting pre-trained models, Google Colab for evaluating the model and importing an image dataset, Jupyter notebooks for code execution and visualization of the output, and Next.js a React framework that is the building blocks to create web application.
 
-## Getting Started
+<div align="center">
 
-First, run the development server:
+  ![Image](./images/desk-view.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+
+  <img src="./images/Mobile-view.png" alt="mobile-view" width="250" />
+  
+</div>
+
+
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
