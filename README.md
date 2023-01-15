@@ -8,7 +8,11 @@ This project is built with Stable Diffusion for ML image diffusion, Dreambooth f
   
 </div>
 
+# About this Project
 
+This project welcome me to the world of AI generated art through a sick open source software called _“Stable Diffusion”_ like __Dall-e__ or __MidJourney__. __Stable Diffusion__ is game changer - it's techniques helps to fine-tune and combine them with other tech to create extremely accurate depictions of any character on the internet.
+
+ 
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
