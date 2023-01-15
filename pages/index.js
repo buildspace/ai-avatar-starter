@@ -11,6 +11,7 @@ const Home = () => {
   const [input, setInput] = useState('Portrait of Yuliia as landscape, beautiful muscular, comedy, elegant, highly detailed, digital painting, artstation, dynamic lighting, concept art, smooth, sharp focus, illustration, art by Leonardo da Vinci'); // creating input state property
   const [img, setImg] = useState(''); // creating new state property for img
   const [retry, setRetry] = useState(0); // Numbers of retries
+  const [retryError, setRetryError] = useState(0);
   const [retryCount, setRetryCount] = useState(maxRetries);// Number of retries left 
   const  [isGenerating, setIsGenerating] = useState(false);// adding isGenerating state
   const [finalPrompt, setFinalPrompt] = useState(''); // state for finalPrompt
@@ -56,6 +57,7 @@ const Home = () => {
     
     if (response.status === 503) { // if model still loading, drop retry time
       setRetry(data.estimated_time);  // setting estimated_time property in state
+      setRetryError("The Timiphil machine is warming up... please wait a moment.");
       return;
     }
 
@@ -65,6 +67,7 @@ const Home = () => {
       return;
     }
     
+    setRetryError("");
     setFinalPrompt(input); // setting final prompt
     setInput(''); // remove content from input box
     setImg(data.image); //set image data into state property
@@ -103,7 +106,7 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>AI Avatar Generator | buildspace</title>
+        <title>AI Avatar Generator | Timiphil</title>
       </Head>
       <div className="container">
         <div className="header">

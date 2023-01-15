@@ -139,7 +139,7 @@ body {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: #F32E98;
+    background-color: #9127ee;
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -339,7 +339,7 @@ body {
 }
 
 .attribution a {
-    color:  #f159aa;
+    color:  #9127ee;
     cursor: pointer;
     transition: color 0.4s ease-in-out;
     text-decoration: none;
