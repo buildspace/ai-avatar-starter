@@ -43,7 +43,7 @@ Type any prompt in the input of any character of whoever you want to be and the 
 
 ## Learning More
 
-I intend to learn more on prompt engineering, how AI works 
+I intend to learn more on prompt engineering, how AI works and improve this application for good user experience.
 
 To learn more about Next.js, take a look at the following resources:
 
@@ -57,8 +57,5 @@ To learn more about Next.js, take a look at the following resources:
 ![Bitbucket open issues](https://img.shields.io/bitbucket/issues/{Timiphil}/{ai-avatar-generator})
 ![GitHub forks](https://img.shields.io/github/forks/{Timiphil}/{ai-avatar-generator}?style=social)
 ![GitHub Repo stars](https://img.shields.io/github/stars/{Timiphil}/{ai-avatar-generator}?style=social)
-
-
-## Deploy on Vercel
 
 
