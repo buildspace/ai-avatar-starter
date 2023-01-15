@@ -20,15 +20,12 @@ This project welcome me to the world of AI generated art through a sick open sou
 3. Building a web application using Next.js for user experience that is deploy through Railway.
 
 ***
- 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## How To Use It
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Type any prompt in the input of any character of whoever you want and the timiphil will generate it for you. You can also use this to generate logo for your website. Example of prompts are:
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+> “Portrait of timiphil(person) as avatar(character), muscular, fantasy, intricate, elegant, highly detailed, digital painting, artstation, concept art, smooth, sharp focus, illustration, art by Michael Armitage(artist 1) and Andre Hemer (artist 2) and Julia Watchel(artist 3)”
 
 ## Learn More
 
