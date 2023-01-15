@@ -11,12 +11,15 @@ This is an AI Avarter generator. It's an incredible web app that is built with S
 # About this Project
 
 This project welcome me to the world of AI generated art through a sick open source software called _“Stable Diffusion”_ like __Dall-e__ or __MidJourney__. __Stable Diffusion__ is game changer - it's techniques helps to fine-tune and combine them with other tech to create extremely accurate depictions of any character on the internet. 
+***
 
 1.  Learning on how prompt works where the AI go through process training data, deep learning, latent space, generation, and to output. Using prompt from text to actual image.
 
-***
+2. I trained __Stable Diffusion__ using a technique called Brimbles to teach Stable Diffusion what I look like using identifiers.
 
-2. I trained __Stable Diffusion__ using a technique called
+3. Building a web application using Next.js for user experience that is deploy through Railway.
+
+***
  
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
