@@ -2,6 +2,7 @@
 
 This is an AI Avarter generator. It's an incredible web app that is built with Stable Diffusion for ML image diffusion, Dreambooth for training implementation, Hugging Face for hosting pre-trained models, Google Colab for evaluating the model and importing an image dataset, Jupyter notebooks for code execution and visualization of the output, and Next.js a React framework which is the building blocks to create web application.
 
+
 <div align="center">
 
   ![Image](./assets/desktop-img.png)
