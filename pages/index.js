@@ -1,9 +1,16 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 import Image from 'next/image';
 import buildspaceLogo from '../assets/buildspace-logo.png';
+import Navbar from '../components/navBar';
+
+
 
 const Home = () => {
+
+  
+  
+  
   const maxRetries = 20;
   const [input, setInput] = useState('');
   const [img, setImg] = useState('');
@@ -92,25 +99,34 @@ const Home = () => {
     runRetry();
   }, [retry]);
   
+  
+   
+
 
   return (
-    <div className="root">
+    <div className="root border-4 border-pink-500 h-screen">
+      <div className='border-4 border-yellow-300'>
+      <Navbar />
+      </div>
   <Head>
     <title>Just Prompt</title>
   </Head>
   <div className="container">
     <div className="header">
-      <div className="header-title">
+     
+      <div className=" flex items-center justify-center text-4xl font-medium header-title">
         <h1>Just Prompt!</h1>
       </div>
-      <div className="header-subtitle">
-        <h2>
+    
+      <div className="flex items-center justify-center text-2xl">
+        <h2 className="text-red-800">
           Turn Ragnar to whoever you want!
         </h2>
       </div>
-      <div className="prompt-container">
-        <input className="prompt-box" value={input} onChange={onChange} />
-        <div className="prompt-buttons">
+      <div  className="prompt-container  flex items-center justify-center bg-lime-300">
+        <input value={input} className="prompt-box bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-1/2 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" onChange={onChange} />
+        
+        <div className="prompt-buttons bg-pink-600 rounded-full">
           <a
             className={
               isGenerating ? 'generate-button loading' : 'generate-button'
@@ -121,7 +137,7 @@ const Home = () => {
               {isGenerating ? (
                 <span className="loader"></span>
               ) : (
-                <p>Generate</p>
+                <p className="cursor-pointer">Generate</p>
               )}
             </div>
           </a>
@@ -133,24 +149,25 @@ const Home = () => {
       
 
       <div className="output-content">
-      <Image src={img} width={512} height={512} alt={finalPrompt} />
+      <Image src={img} className="rounded" width={512} height={512} alt={finalPrompt} />
       {/* Add prompt here */}
       <p>{finalPrompt}</p>
     </div>
       
     )}
   </div>
-  <div className="badge-container grow">
-    <a
+  <div className="badge-container bg-orange-300">
+    
+      <div className="badge bg-green-700 h-18 w-20">
+      <a
       href="https://buildspace.so/builds/ai-avatar"
       target="_blank"
       rel="noreferrer"
     >
-      <div className="badge">
-        <Image src={buildspaceLogo} alt="buildspace logo" />
         <p>build with buildspace</p>
+        </a>
       </div>
-    </a>
+   
   </div>
 </div>
   );
