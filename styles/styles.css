@@ -10,41 +10,11 @@ body {
     font-family: 'Manrope', sans-serif;
 }
 
-.root {
-    display: flex;
-    place-content: center flex-start;
-    align-items: center;
-    background-color: rgb(0, 0, 0);
-    flex-flow: column nowrap;
-    gap: 10px;
-    height: 100vh;
-    overflow: auto;
-    padding: 0px;
-    position: relative;
-}
 
-.container {
-    display: flex;
-    flex: 0 0 auto;
-    flex-flow: row nowrap;
-    gap: 10px;
-    /* height: fit-content; */
-    height: 100%;
-    overflow: auto;
-    position: relative;
-    width: auto;
-    gap: 64px;
-    background-color: aqua;
-}
 
-.header {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    color: #FFF
-}
+
+
+
 
 .header-title {
     display: flex;

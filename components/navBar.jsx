@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Logo from "../public/images/navBar/Logo.png";
 import React, { useState,useRef } from "react";
 
 
@@ -7,30 +6,30 @@ export default function Navbar() {
  
 
   return (
-   <div className="flex items-center justify-center bg-blue-600 space-x-40" >
+   <div className="flex font p-2 items-center sm:mx-auto justify-center" >
      
      
     
-    
-  <button class="rounded-full transition ease-in-out delay-150 bg-blue-600 hover:-translate-y-1 hover:scale-110 hover:bg-indigo-500 duration-300 flex items-center justify-center py-2 pl-3 pr-4 text-white text-lg md:bg-transparent md:text-white-700 md:p-0 dark:text-white font-medium" aria-current="page">
-  <a href="#prompt">Generate</a>
-</button>
-
+    <div>
+      <a href="#promptss">
+     <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+      Get Started</button>
+      </a>
+      </div>
       
       
-      
-        <a href="#" className="block py-2 pl-3 pr-4 text-white-700 rounded md:p-0 dark:text-white-400 text-xl font-medium hover:text-yellow-500 transition-all">ABOUT</a>
-      
-      
-        <a href="https://buildspace.so/builds#ml-projects" target="_blank" className="block py-2 pl-3 pr-4 text-white-700 rounded md:p-0 dark:text-white-400 text-xl font-medium hover:text-yellow-500 transition-all">EXPLORE</a>
+      <div>
+      <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">About</button>
+      </div>
+      <div>
+      <button type="button" className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">
+        <a href="https://buildspace.so/builds#ml-projects" target="_blank">
+        Explore</a></button>
+        </div>
           
    
    
   
- <div>
-    <a href="#" className="flex">Connect</a>
- </div>
- 
   
   </div>
   );
